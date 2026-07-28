@@ -308,24 +308,20 @@
   </div>
 </section>
 
-<!-- NEXT -->
-<section class="foot-cta">
-  <div class="wrap reveal">
-    <h2>다음 단계</h2>
-    <p>킥오프 미팅에서 실제 상담 건수·전환율을 공유받는 즉시, 제안서 1장·10장의 수치를 실제 데이터로 대체하고 목표치와 예산 배분을 재조정한 최종안을 다시 제출합니다.</p>
-    <a href="#" class="btn">킥오프 미팅 잡기</a>
-  </div>
-</section>
+<!-- CHARTS -->
+<section>
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker">한눈에 보기</div>
+      <h2>숫자로 정리한 3개월</h2>
+      <p>예산이 어디에 쓰이고, 무엇이 산출되며, 어떤 목표를 향하는지 세 장의 차트로 요약했습니다.</p>
+    </div>
 
-<footer>
-  <div class="wrap">담당 · 연락처 · 이메일 &nbsp;|&nbsp; © 2026 지음과펴냄 바이럴 마케팅 제안서 · VAT 별도</div>
-</footer>
-
-<script>
-  const bar=document.getElementById('bar');
-  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'});
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll?.('.fill').forEach(f=>f.style.width=f.dataset.w);io.unobserve(e.target)}})},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script>
-</body>
-</html>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px" class="reveal">
+      <!-- 예산 배분 -->
+      <div style="background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow)">
+        <h3 style="font-family:'Nanum Myeongjo',serif;color:var(--green);font-size:1.15rem;font-weight:800;margin-bottom:4px">예산 배분</h3>
+        <p style="color:var(--ink-soft);font-size:.86rem;margin-bottom:14px">단위: 만원 · 총 500만원</p>
+        <svg viewBox="0 0 520 250" width="100%" font-family="'Noto Sans KR',sans-serif" role="img" aria-label="예산 배분 막대 차트">
+          <line x1="34" y1="205" x2="510" y2="205" stroke="#DED5C2" stroke-width="1.5"/>
+          <defs><lin
